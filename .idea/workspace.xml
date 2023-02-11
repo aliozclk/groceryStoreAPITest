@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="169454c8-1e0d-434a-860e-9b9bace7a6c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/APIUtils.java" afterDir="false" />
+    <list default="true" id="169454c8-1e0d-434a-860e-9b9bace7a6c2" name="Changes" comment="Grocery Store API Test">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/request/AddAnItemToCartRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/request/CreateOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/request/CreateTokenRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/request/DetermineQuantityRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/CreateCartResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/CreateOrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/ProductItemsResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/ProductsResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/SpecifiedProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/StatusResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/APIResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/CommonExcelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/features/groceryStoreAPITesting.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/APIUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/APIUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -37,28 +47,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="groceryStoreAPITest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="groceryStoreAPITest" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="groceryStore.utilities" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,8 +68,53 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676056406796</updated>
-      <workItem from="1676056408444" duration="1604000" />
+      <workItem from="1676056408444" duration="3941000" />
+      <workItem from="1676062734133" duration="2299000" />
+      <workItem from="1676105452283" duration="1575000" />
     </task>
+    <task id="LOCAL-00001" summary="Grocery Store API Test">
+      <created>1676060342164</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676060342164</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Grocery Store API Test">
+      <created>1676060450194</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676060450194</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Grocery Store API Test">
+      <created>1676060457803</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676060457803</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Grocery Store API Test">
+      <created>1676060464918</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676060464918</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Grocery Store API Test">
+      <created>1676060475133</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676060475133</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Grocery Store API Test">
+      <created>1676060480990</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676060480990</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Grocery Store API Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grocery Store API Test" />
   </component>
 </project>
