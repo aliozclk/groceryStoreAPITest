@@ -1,11 +1,14 @@
 package groceryStore.pojos.response;
 
-import lombok.Builder;
-import lombok.Data;
 
-@Builder
+import lombok.*;
+
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class CreateOrderResponse{
 	private String orderId;
 	private boolean created;
+
 }
