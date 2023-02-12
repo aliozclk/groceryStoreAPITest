@@ -1,13 +1,18 @@
 package groceryStore.utilities;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.stream.JsonReader;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import lombok.Data;
 
 import java.io.StringReader;
 import java.util.Map;
@@ -65,5 +70,17 @@ public class APIUtils {
         return requestSpec;
     }
 
+    public static JsonPath responseToJsonPath(Response response){
+        JsonPath js = new JsonPath(response.asString());
+        return js;
+    }
 
+    public ObjectMapper getObjectMapper() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.configure(DeserializationFeature.ACCEPT_EMPTY_ARRAY_AS_NULL_OBJECT, true);
+        objectMapper.enable(DeserializationFeature.ACCEPT_EMPTY_ARRAY_AS_NULL_OBJECT);
+        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
+        return objectMapper;
+    }
 }
