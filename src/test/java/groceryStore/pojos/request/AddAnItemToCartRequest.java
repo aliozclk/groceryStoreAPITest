@@ -1,11 +1,18 @@
 package groceryStore.pojos.request;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Builder
+
 @Data
-public class AddAnItemToCartRequest{
-	private int quantity;
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class AddAnItemToCartRequest {
 	private int productId;
+	private int quantity;
+
+
 }
