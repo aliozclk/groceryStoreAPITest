@@ -7,6 +7,7 @@ import groceryStore.pojos.request.CreateOrderRequest;
 import groceryStore.pojos.response.*;
 import groceryStore.utilities.APIResources;
 import groceryStore.utilities.APIUtils;
+import groceryStore.utilities.CommonExcelReader;
 import groceryStore.utilities.TestDataBuild;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,6 +18,9 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
+
+import java.io.IOException;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
@@ -37,9 +41,19 @@ public class ApıTest extends APIUtils {
     RequestSpecification req = new RequestSpecBuilder().setBaseUri("https://simple-grocery-store-api.glitch.me")
             .setContentType(ContentType.JSON).build();
 
+    Map<String, String> excelData;
 
-    
-    @Given("the status {string}")
+    @Given("the user wants to test test case : {string} by retrieving the test data from Excel Workbook: {string} Sheet: {string} for API")
+    public void the_user_gets_test_data(String testCase, String excelWorkbook, String sheet) {
+        try {
+            excelData = new CommonExcelReader().getDataFromExcel(testCase, excelWorkbook, sheet);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    @When("the status {string}")
     public void the_status(String state) {
         RequestSpecification reqStatus = given().log().all().spec(req);
         response = reqStatus.when().get(resources.getStatusAPI())
