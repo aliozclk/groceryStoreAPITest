@@ -64,9 +64,11 @@ public class ApıTest extends APIUtils {
         Assert.assertEquals(status, state);
 
     }
-    @When("the user gets all products and print {string}'s id")
-    public void the_user_gets_all_products_with(String productName) throws JsonProcessingException {
+    @When("the user gets all products and print id")
+    public void the_user_gets_all_products_with() throws JsonProcessingException {
         // Write code here that turns the phrase above into concrete actions
+
+        String productName = excelData.get("product_Name");
         RequestSpecification reqProducts = given().log().all().spec(req);
         response = reqProducts.when().get(resources.getGetAllProductsAPI())
                 .then().extract().response();
@@ -109,16 +111,20 @@ public class ApıTest extends APIUtils {
     @Then("the user modifies an item by determining quantity")
     public void the_user_modifies_an_item_by_determining_quantity() {
         // Write code here that turns the phrase above into concrete actions
+        String quantity = excelData.get("quantity");
+        int expectedStatusCode = Integer.parseInt(excelData.get("modify_Item_Status_Code"));
         resources.setModifyAnItem(String.valueOf(itemId));
-        RequestSpecification modifyItem = given().log().all().spec(req).body(testDataBuild.modifyAnItemPayload(5));
+        RequestSpecification modifyItem = given().log().all().spec(req).body(testDataBuild.modifyAnItemPayload(Integer.parseInt(quantity)));
         int actualStatusCode = modifyItem.when().patch(resources.getModifyAnItem()).then()
                 .extract().response().getStatusCode();
-        Assert.assertEquals(204,actualStatusCode);
+        Assert.assertEquals(expectedStatusCode,actualStatusCode);
 
     }
-    @Then("the user gets token with clientName {string} and clientEmail {string}")
-    public void the_user_gets_token(String clientName, String clientEmail) {
+    @Then("the user gets token with clientName and clientEmail")
+    public void the_user_gets_token() {
         // Write code here that turns the phrase above into concrete actions
+        String clientName = excelData.get("client_Name");
+        String clientEmail = excelData.get("client_Email");
         RequestSpecification getToken = given().log().all().spec(req)
                 .body(testDataBuild.createTokenPayload(clientName,clientEmail));
         response = getToken.when().post(resources.getGetTokenAPI()).then()

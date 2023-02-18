@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/java/resources/features",
         glue = "groceryStore/step_definitions",
-        tags = "@grocerySimpleTest",
+        tags = "@grocerySimpleTestWıthExcel",
         dryRun = false
 
 )

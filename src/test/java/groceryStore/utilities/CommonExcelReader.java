@@ -52,7 +52,7 @@ public class CommonExcelReader {
            class is used to read bytes from the file, and the close() method is used to close the stream and
            release any system resources associated with it.
           */
-        FileInputStream inputStream = new FileInputStream("src/test/resources/TestData/" + workbookName + ".xlsx");
+        FileInputStream inputStream = new FileInputStream("src/test/java/resources/TestData/" + workbookName + ".xlsx");
 
 
         // Create Workbook Object to read values from excel.

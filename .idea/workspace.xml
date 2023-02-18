@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="169454c8-1e0d-434a-860e-9b9bace7a6c2" name="Changes" comment="Grocery Store API Test">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/request/AddAnItemToCartRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/request/CreateOrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/request/CreateTokenRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/request/DetermineQuantityRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/CreateCartResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/CreateOrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/ProductItemsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/ProductsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/SpecifiedProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/StatusResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/APIResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/CommonExcelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/features/groceryStoreAPITesting.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/ResponseX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/ResponseXItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/step_definitions/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/TestDataBuild.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/features/groceryStoreTestWıthExcel.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/testData/grocery.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/APIUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/APIUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/ProductItemsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/ProductItemsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/ProductsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/ProductsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/SpecifiedProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/SpecifiedProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/StatusResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/groceryStore/pojos/response/StatusResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/groceryStore/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/groceryStore/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/groceryStore/step_definitions/ApıTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/groceryStore/step_definitions/ApıTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/CommonExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/groceryStore/utilities/CommonExcelReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,13 +50,81 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alioz/Desktop/workspace/InarAcademy/groceryStoreAPITest&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alioz\Desktop\workspace\InarAcademy\groceryStoreAPITest\src\test\java\resources\testData" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="groceryStore.pojos.request" />
       <recent name="groceryStore.utilities" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CukesRunner">
+    <configuration name="Feature: groceryStoreAPITesting" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/resources/features/groceryStoreAPITesting.feature" />
+      <option name="GLUE" value="groceryStore.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="groceryStoreAPITest" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: groceryStoreAPITesting" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: ..." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/resources/features/groceryStoreAPITesting.feature" />
+      <option name="GLUE" value="groceryStore.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="groceryStoreAPITest" />
+      <option name="NAME_FILTER" value="^\.\.\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^\.\.\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: ..." />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groceryStoreAPITest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="groceryStore.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="groceryStore.runners" />
+      <option name="MAIN_CLASS_NAME" value="groceryStore.runners.CukesRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Feature: groceryStoreAPITesting" />
+        <item itemvalue="Cucumber Java.Scenario: ..." />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +136,12 @@
       <updated>1676056406796</updated>
       <workItem from="1676056408444" duration="3941000" />
       <workItem from="1676062734133" duration="2299000" />
-      <workItem from="1676105452283" duration="1575000" />
+      <workItem from="1676105452283" duration="11053000" />
+      <workItem from="1676122765740" duration="6177000" />
+      <workItem from="1676138095877" duration="5226000" />
+      <workItem from="1676197780686" duration="7393000" />
+      <workItem from="1676217336983" duration="117000" />
+      <workItem from="1676558147500" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="Grocery Store API Test">
       <created>1676060342164</created>
@@ -114,7 +185,175 @@
       <option name="project" value="LOCAL" />
       <updated>1676060480990</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Grocery Store API Test">
+      <created>1676109020066</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109020066</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Grocery Store API Test">
+      <created>1676109050871</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109050871</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Grocery Store API Test">
+      <created>1676109060742</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109060742</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Grocery Store API Test">
+      <created>1676109066113</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109066113</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Grocery Store API Test">
+      <created>1676109073341</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109073341</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Grocery Store API Test">
+      <created>1676109081391</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109081391</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Grocery Store API Test">
+      <created>1676109087213</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109087213</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Grocery Store API Test">
+      <created>1676109093031</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109093031</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Grocery Store API Test">
+      <created>1676109099056</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109099056</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Grocery Store API Test">
+      <created>1676109106902</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109106902</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Grocery Store API Test">
+      <created>1676109112736</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109112736</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Grocery Store API Test">
+      <created>1676109117624</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109117624</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Grocery Store API Test">
+      <created>1676109123467</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109123467</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Grocery Store API Test">
+      <created>1676109131437</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109131437</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Grocery Store API Test">
+      <created>1676109136206</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109136206</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Grocery Store API Test">
+      <created>1676109143348</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1676109143348</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Grocery Store API Test">
+      <created>1676201892557</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1676201892557</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Grocery Store API Test">
+      <created>1676201901401</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1676201901401</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Grocery Store API Test">
+      <created>1676201909506</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1676201909506</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Grocery Store API Test">
+      <created>1676201918467</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1676201918467</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Grocery Store API Test">
+      <created>1676201927099</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676201927099</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Grocery Store API Test">
+      <created>1676201934978</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1676201934978</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Grocery Store API Test">
+      <created>1676201942126</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1676201942126</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Grocery Store API Test">
+      <created>1676202625866</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1676202625866</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,5 +373,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Grocery Store API Test" />
     <option name="LAST_COMMIT_MESSAGE" value="Grocery Store API Test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/groceryStore/step_definitions/Test.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/groceryStore/runners/CukesRunner.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/groceryStore/step_definitions/ApıTest.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
